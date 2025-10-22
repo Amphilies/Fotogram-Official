@@ -41,9 +41,12 @@
   justify-content: center;
   align-items: center;
 }
+.dialog_image_hide {
+  transform: translateX(1000%);
+}
 
 .dialog_image_opened::backdrop {
-  background-color: rgba(55, 55, 55, 0.768);
+  background-color: rgba(55, 55, 55, 0.94);
 }
 
 /* Image Dialog Header */
@@ -63,9 +66,10 @@
 
 /* Image Dialog Main */
 .container_image {
-  width: 700px;
+  width: 800px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .image_opened {
@@ -76,23 +80,18 @@
   object-fit: cover;
 }
 
-.container_buttons {
-  height: 400px;
-  width: 700px;
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-}
-
 .button_slide {
-  background-color: rgba(0, 0, 0, 0.157);
-  height: 700px;
+  background-color: rgb(255, 255, 255);
+  font-size: 18px;
+  height: 30px;
   width: 30px;
   border: solid black 1px;
+  border-radius: 50%;
 }
 
 .button_slide:hover {
-  background-color: rgba(0, 0, 0, 0.386);
+  background-color: rgb(220, 220, 220);
+  cursor: pointer;
 }
 
 /* Image Dialog Footer */
