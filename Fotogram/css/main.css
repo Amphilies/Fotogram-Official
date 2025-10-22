@@ -1,0 +1,163 @@
+/* Miniaturen Ansicht */
+.section_minature {
+  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container_image_minature {
+  height: 263px;
+  width: 519px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image_minature {
+  height: 256px;
+  width: 512px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.image_minature:hover {
+  position: absolute;
+  height: 260px;
+  width: 518px;
+  cursor: pointer;
+}
+
+
+/* Image Dialog General*/
+.dialog_image_opened {
+  background-color: rgba(55, 55, 55, 0);
+  border: solid black 0px;
+  scrollbar-width: none;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog_image_opened::backdrop {
+  background-color: rgba(55, 55, 55, 0.768);
+}
+
+/* Image Dialog Header */
+.header_full_image {
+  background-color: rgba(255, 255, 255, 0.512);
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigator_counter {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Image Dialog Main */
+.container_image {
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.image_opened {
+  height: 700px;
+  min-width: 700px;
+  max-width: 700px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.container_buttons {
+  height: 400px;
+  width: 700px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button_slide {
+  background-color: rgba(0, 0, 0, 0.157);
+  height: 700px;
+  width: 30px;
+  border: solid black 1px;
+}
+
+.button_slide:hover {
+  background-color: rgba(0, 0, 0, 0.386);
+}
+
+/* Image Dialog Footer */
+.footer_image_navigator {
+  width: 700px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer_image_navigator h3 {
+  background-color: rgba(255, 255, 255, 0.512);
+  margin: 0;
+  width: 700px;
+  text-align: center;
+}
+
+
+/* Responsive */
+@media (max-width: 730px) {
+  .header_full_image {
+    width: 300px;
+  }
+
+  .container_image {
+    width: 300px;
+  }
+
+  .image_opened {
+    height: 300px;
+    min-width: 300px;
+    max-width: 300px;
+  }
+
+  .container_buttons {
+    height: 300px;
+    width: 300px;
+  }
+
+  .button_slide {
+    background-color: rgba(0, 0, 0, 0.157);
+    height: 300px;
+  }
+
+  .footer_image_navigator {
+    width: 300px;
+  }
+
+  .footer_image_navigator h3 {
+    width: 300px;
+  }
+}
+
+@media (max-width: 530px) {
+  .image_minature {
+    height: 128px;
+    width: 256px;
+  }
+
+  .container_image_minature {
+    height: 131px;
+    width: 259px;
+  }
+
+  .image_minature:hover {
+    height: 130px;
+    width: 258px;
+  }
+}
