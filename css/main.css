@@ -87,6 +87,9 @@
   width: 30px;
   border: solid black 1px;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button_slide:hover {
@@ -110,9 +113,9 @@
 
 
 /* Responsive */
-@media (max-width: 730px) {
+@media (max-width: 830px) {
   .header_full_image {
-    width: 300px;
+    width: 250px;
   }
 
   .container_image {
@@ -121,25 +124,22 @@
 
   .image_opened {
     height: 300px;
-    min-width: 300px;
-    max-width: 300px;
-  }
-
-  .container_buttons {
-    height: 300px;
-    width: 300px;
+    min-width: 250px;
+    max-width: 250px;
   }
 
   .button_slide {
-    background-color: rgba(0, 0, 0, 0.157);
-    height: 300px;
+    font-size: 16px;
+    height: 20px;
+    width: 20px;
   }
 
   .footer_image_navigator {
-    width: 300px;
+    width: 250px;
   }
 
   .footer_image_navigator h3 {
+    font-size: 14px;
     width: 300px;
   }
 }
