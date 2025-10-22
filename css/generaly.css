@@ -1,14 +1,13 @@
     body {
-      margin: 0;
-      height: 100%;
-      color: white;
       background: linear-gradient(135deg,
-
           rgb(0, 0, 255) 5%,
           rgb(4, 4, 35) 25%,
           rgb(0, 0, 255) 50%,
           rgb(4, 4, 35) 75%,
           rgb(0, 0, 255) 100%);
+      margin: 0;
+      height: 100%;
+      color: white;
     }
 
     a {
@@ -18,4 +17,13 @@
     a:visited {
       color: white;
       text-decoration: none;
+    }
+    .d_none {
+      display: none;
+    }
+
+    @media (min-height: 1500px) {
+      body {
+        height: 100vh;
+      }
     }
