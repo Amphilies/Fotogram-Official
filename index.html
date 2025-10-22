@@ -23,19 +23,17 @@
     <section id="section_Minature" class="section_minature">
       <!-- JS fügt Bilder Galerie ein -->
     </section>
-    <dialog onclick="closeImage()" id="dialog_Image_Opened" class="dialog_image_opened">
+    <dialog onclick="closeImage()" id="dialog_Image_Opened" class="dialog_image_opened dialog_image_hide">
       <header onclick="event.stopPropagation()" class="header_full_image">
         <div class="navigator_counter">
           <div id="image_counter"></div>
         </div>
-        <Button onclick="closeImage(); event.stopPropagation()">Schließen</Button>
+        <Button onclick="closeImage(), event.stopPropagation()">Schließen</Button>
       </header>
       <section onclick="event.stopPropagation()" class="container_image">
+        <button onclick="prevImg()" class="button_slide"><</button>
         <img id="full_Image" class="image_opened" src="./img/album/beach-2465444_1280.jpg" alt="">
-        <div class="container_buttons">
-          <button onclick="prevImg()" class="button_slide">←</button>
-          <button onclick="nextImg()" class="button_slide">→</button>
-        </div>
+        <button onclick="nextImg()" class="button_slide">></button>
       </section>
       <footer onclick="event.stopPropagation()" class="footer_image_navigator">
         <h3 id="content_Description">Hier ist die Überschrift</h3>
