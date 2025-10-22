@@ -1,0 +1,27 @@
+    /* Header Area */
+    .header_main_page img {
+      height: 56px;
+      padding-left: 28px;
+    }
+
+     /* Footer Area */
+    .template_footer {
+      height: 100px;
+      gap: 50px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .template_footer a:visited {
+      color: white;
+      text-decoration: none;
+    }
+
+    /* Responsive Area */
+    @media (max-width: 380px) {
+      .header_main_page img {
+        height: 40px;
+      }
+    }
